@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE LIVRARIA : página principal</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.19.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.20.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <script src="livroCard.js" defer></script> 
+</head>
+<body>
+    <header class="purple-header">
+        <img src="fotos/_Logo livraria.png" alt="logo" class="profile-picture">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <a class="navbar-brand" href="#">         </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paginainicial.html">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="fas fa-home"></i> Home
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="bi bi-person"></i> Cadastro
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favoritos.html">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="bi bi-heart"></i> Favoritos
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="bi bi-cart"></i> Carrinho
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categorias.html">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="fas fa-book book-icon"></i> Categorias
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Digite sua pesquisa" aria-label="Pesquisar" aria-describedby="basic-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="basic-addon2">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-center py-1 titulo1">Produtos mais vendidos</h1>
+
+    <div class="container mt-5">
+        <div class="row equal-height">
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/sete maridos.jpeg" 
+                    titulo="Os Sete Maridos de Evelyn Hugo" 
+                    autor="Taylor Jenkins Reid" 
+                    descricao="Páginas: 360" 
+                    preco="$27,99">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/box jane.jpeg" 
+                    titulo="Coleção Jane Austen" 
+                    autor="Jane Austen" 
+                    descricao="Páginas: 600" 
+                    preco="$52,21">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/cronicas.jpeg" 
+                    titulo="As Crônicas de Nárnia" 
+                    autor="C. S. Lewis" 
+                    descricao="Páginas: 752" 
+                    preco="$30,99">
+                </livro-card>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center py-1 titulo1">Promoções</h1>
+
+    <div class="container mt-5">
+        <div class="row equal-height">
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/linguagem c.jpeg" 
+                    titulo="Linguagem C" 
+                    autor="André Backes" 
+                    descricao="Páginas: 279" 
+                    preco="$196,99">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/pequeno principe.jpeg" 
+                    titulo="O Pequeno Príncipe" 
+                    autor="Antoine de Saint-Exupéry" 
+                    descricao="Páginas: 93" 
+                    preco="$14,89">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/diario de anne.jpeg" 
+                    titulo="O Diário de Anne Frank" 
+                    autor="Anne Frank" 
+                    descricao="Páginas: 192" 
+                    preco="$25,63">
+                </livro-card>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-center py-1 titulo1">Recomendações</h1>
+
+    <div class="container mt-5">
+        <div class="row equal-height">
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/tmi.jpeg" 
+                    titulo="Os Instrumentos Mortais" 
+                    autor="Cassandra Clare" 
+                    descricao="Páginas: 2660" 
+                    preco="$207,92">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/1984.jpeg" 
+                    titulo="1984" 
+                    autor="George Orwell" 
+                    descricao="Páginas: 288" 
+                    preco="$22,42">
+                </livro-card>
+            </div>
+            <div class="col-md-4">
+                <livro-card 
+                    imagem="fotos/breves.jpeg" 
+                    titulo="Breves Respostas para Grandes Questões" 
+                    autor="Stephen Hawking" 
+                    descricao="Páginas: 256" 
+                    preco="$55,92">
+                </livro-card>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="footer">
+        <a href="https://maps.app.goo.gl/1g4Twi64PtYdxU5eA" target="_blank"><i class="fas fa-map-marker-alt"></i> Conheça nossa loja física</a>
+        <a href="https://www.instagram.com/_vitoriasilva76?igsh=ejVhYzNkcWE2Nmpp" target="_blank"><i class="fab fa-instagram"></i> Siga-nos no Instagram</a>
+        <p> © 2024 livraria star bookstore</p>
+    </div>
+</body>
+</html>

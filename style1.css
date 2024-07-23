@@ -1,0 +1,74 @@
+body {
+    background-color: #e7cbe7;
+    color:#490749
+}
+
+
+.equal-height [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.equal-height [class*="col-"] .card {
+    flex: 1;
+}
+.navbar a:not(:last-child) {
+    margin-right: 100px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  color: #e0a3db; 
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-color: #e0a3db; 
+}
+
+
+.purple-header {
+    background-color: #812085;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-picture {
+    max-width: 300px;
+    margin-top: 5px;
+}
+
+
+.category-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+button{
+    background-color: #e7cbe7;
+}
+
+.footer {
+    background-color: #812085;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 20px; 
+    width: 100%;
+    bottom: 0;
+    font-size: 16px; 
+  }
+
+  .footer i {
+    margin-right: 5px;
+  }
+
+  .btn-purple {
+    color: #fff;
+    background-color: #800080; 
+    border-color: #800080; 
+  }
+
+  .btn-purple:hover {
+    background-color: #6a006a;
+    border-color: #6a006a;
+  }
